@@ -11,8 +11,8 @@ def main():
     recetas = buscar_recetas(texto)
 
     try:
-        for indice, receta in enumerate(recetas):
-            print(indice, receta["strMeal"])
+        for receta in (recetas):
+            print(receta["strMeal"])
             print("Origin: ", receta["strCountry"])
     except TypeError:
         print("No se encontraron recetas.")
